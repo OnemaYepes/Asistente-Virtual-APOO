@@ -31,7 +31,7 @@ def main():
             if user_prompt:
                 ciudad = user_prompt.replace('temperatura', '')
                 print(ciudad)
-                url = "https://api.openweathermap.org/data/2.5/weather?q={}&appid=3030164fee6931ada696009c6e4aa19d&units=metric".format(ciudad)
+                url = "https://api.openweathermap.org/data/2.5/weather?q={}&appid=(APIWEATHER)&units=metric".format(ciudad)
                 res = requests.get(url)
                 data = res.json()
                 temp = data["main"]["temp"]
